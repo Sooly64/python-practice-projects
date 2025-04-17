@@ -1,2 +1,10 @@
 # python-practice-projects
-some early projects I made to learn python, file handling with python, advanced programming concepts, file scrapping, utility and automation, and more!
+This repository contains a collection of beginner-to-intermediate Python mini projects as part of a personal learning path toward building automation and tools for small businesses
+
+## Current Projects Included
+
+- ✅ To-Do List CLI
+
+More to Come!
+
+Each project has its own folder and README file for information on how it works and what I used to make it, and important information I learnt
