@@ -1,13 +1,16 @@
 # To-Do List Keeper
+
+FILE_PATH = "ToDos.txt"
+
 def addTask(task):
-    with open(r"ToDos.txt", "a") as file:
+    with open(FILE_PATH, "a") as file:
         if file.tell() > 0:
             file.write("\n")
         file.write(task)
     print("Task Added Successfully")
 
 def showTasks():
-    with open(r"ToDos.txt" , "r") as file:
+    with open(FILE_PATH, "r") as file:
         content = file.readlines()
         lineNumber = 1
         for line in content:
@@ -16,15 +19,18 @@ def showTasks():
                 lineNumber += 1
 
 def removeTasks(task_Index):
-    with open("ToDos.txt", "r") as file:
-        tasks = file.readlines()
-    if 0 < task_Index <= len(tasks):
-        removedTask = tasks.pop(task_Index - 1).strip()
-        with open("ToDos.txt", "w") as file:
-            file.writelines(tasks)
-        print(f"\"{removedTask}\" removed successfully!")
-    else:
-        print("Invalid Index!")
+    try:
+        with open(FILE_PATH, "r") as file:
+            tasks = file.readlines()
+        if 0 < task_Index <= len(tasks):
+            removedTask = tasks.pop(task_Index - 1).strip()
+            with open(FILE_PATH, "w") as file:
+                file.writelines(tasks)
+            print(f"\"{removedTask}\" removed successfully!")
+        else:
+            print("Invalid Index!")
+    except ValueError:
+        print("Please enter a valid number!")
 
 print("Welcome to your To-Do List")
 while True:
@@ -45,7 +51,10 @@ while True:
             if taskIndexToRemove == "exit":
                 break
             else:
-                removeTasks(int(taskIndexToRemove))
+                try:
+                    removeTasks(int(taskIndexToRemove))
+                except ValueError:
+                    print("Please enter a valid number!")
     elif command == "q":
         break
     else:
