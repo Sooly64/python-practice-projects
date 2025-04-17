@@ -9,7 +9,8 @@ A simple command-line Python app that helps you keep track of tasks using file h
 - ✅ Add new tasks  
 - 📋 View all tasks with task numbers  
 - ❌ Remove tasks by index  
-- 💾 Stores tasks persistently using file I/O  
+- 💾 Stores tasks persistently using file I/O
+- 💬 Built in Comment detection to avoid lines of text that begin with # in the txt file
 
 ---
 
