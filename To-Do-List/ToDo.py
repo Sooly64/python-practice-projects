@@ -1,20 +1,25 @@
 # To-Do List Keeper
 def addTask(task):
-    with open("c:/Users/light/OneDrive/Desktop/FileHandling/bob.txt", "a") as file:
+    with open(r"ToDos.txt", "a") as file:
         if file.tell() > 0:
             file.write("\n")
         file.write(task)
     print("Task Added Successfully")
+
 def showTasks():
-    with open("c:/Users/light/OneDrive/Desktop/FileHandling/bob.txt" , "r") as file:
+    with open(r"ToDos.txt" , "r") as file:
         content = file.readlines()
-        for i in range(len(content)):
-            print(f"Task {i + 1}: {content[i].strip()}")
+        lineNumber = 1
+        for line in content:
+            if not line.strip().startswith("#") and line.strip() != "":
+                print(f"Task {lineNumber}: {line.strip()}")
+                lineNumber += 1
+
 def removeTasks(task_Index):
     with open("ToDos.txt", "r") as file:
         tasks = file.readlines()
     if 0 < task_Index <= len(tasks):
-        removedTask = tasks.pop(task_Index - 1)
+        removedTask = tasks.pop(task_Index - 1).strip()
         with open("ToDos.txt", "w") as file:
             file.writelines(tasks)
         print(f"\"{removedTask}\" removed successfully!")
