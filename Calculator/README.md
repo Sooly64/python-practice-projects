@@ -49,7 +49,6 @@ Do you want to calculate again? y/n: y
 
 - Add support for more operations (e.g., square root, logarithms)  
 - Create a GUI version with Tkinter or PyQt  
-- Save calculation history to a file  
 - Add support for keyboard shortcuts
 
 ## 🙌 Author
