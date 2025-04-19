@@ -10,6 +10,7 @@ A beginner-friendly Python calculator that performs basic arithmetic operations 
 - Customizable user experience with clear prompts and messages  
 - Repeats calculations until user exits  
 - Smooth exit animation using `time.sleep()`
+- History storage and animated display
 
 ## 🧠 What I Learned
 
