@@ -4,7 +4,7 @@ This repository contains a collection of beginner-to-intermediate Python mini pr
 ## Current Projects Included
 
 - ✅ To-Do List CLI
-- - ✅ CLI Calculator
+- ✅ CLI Calculator
 
 More to Come!
 
