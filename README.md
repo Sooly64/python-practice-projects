@@ -6,6 +6,7 @@ This repository contains a collection of beginner-to-intermediate Python mini pr
 - ✅ CLI To-Do List
 - ✅ CLI Calculator
 - ✅ CLI DNA/RNA Sequence to Amino Acid Translator
+- ✅ CLI Web Scraper for [Quotes to Scrape](https://quotes.toscrape.com/) based on a specific tag
 
 More to Come!
 
