@@ -40,9 +40,9 @@ python book_scraper.py
 
 ## Notes
 - Only includes in-stock books
-- Website structure changes may break scraper
+- Website structure changes may break scraper, based on the specific strucutre of the webpage from my snooping around
 - Consider adding delays for production use
-- Respect robots.txt
+- Respects robots.txt (Doesn't even have one and its a scraping website ():)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
