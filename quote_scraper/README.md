@@ -64,5 +64,3 @@ The script will then display all short quotes related to that tag.
 2. **Pagination Handling**: If there are multiple pages of quotes for the tag, the script will follow the "next" links and fetch quotes from subsequent pages.
 3. **Quote Extraction**: For each quote, it extracts the text of the quote and the author's name.
 4. **Filtering**: It only displays quotes that are under 200 characters long.
-
-## Contributing
