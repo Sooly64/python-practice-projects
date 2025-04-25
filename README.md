@@ -7,6 +7,7 @@ This repository contains a collection of beginner-to-intermediate Python mini pr
 - ✅ CLI Calculator
 - ✅ CLI DNA/RNA Sequence to Amino Acid Translator
 - ✅ CLI Web Scraper for [Quotes to Scrape](https://quotes.toscrape.com/) based on a specific tag
+- ✅ Book Price Web Scraper for [Books to Scrape](https://books.toscrape.com/), saves sorted data to a `.csv` file
 
 More to Come!
 
